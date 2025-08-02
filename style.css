@@ -1,0 +1,147 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #f3f4f6, #e0f7fa);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 2.5rem 1rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1rem;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  text-shadow: 0 0 5px #fff;
+}
+
+/* Section Cards */
+.card {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.6s ease both;
+}
+.card h2 {
+  color: #0072ff;
+  margin-bottom: 1rem;
+}
+.colorful {
+  border-left: 10px solid #00c6ff;
+  border-image: linear-gradient(180deg, #00c6ff, #0072ff) 1;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.badge {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contact links */
+a {
+  color: #0072ff;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  font-size: 22px;
+  background: linear-gradient(135deg, #ee0979, #ff6a00);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#backToTopBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 4rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .badges {
+    justify-content: center;
+  }
+}
